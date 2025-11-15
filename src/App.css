@@ -354,6 +354,14 @@ body.dark-mode .card-title {
   color: #f8f9fa !important;
 }
 
+body.dark-mode .card-subtitle {
+  color: #adb5bd !important;
+}
+
+body.dark-mode .text-muted {
+  color: #adb5bd !important;
+}
+
 body.dark-mode .section-title {
   color: #ff9800 !important;
 }
@@ -379,6 +387,55 @@ body.dark-mode .btn-outline-primary {
 body.dark-mode .btn-outline-primary:hover {
   background: #66aaff;
   color: #2d3748;
+}
+
+body.dark-mode .badge {
+  color: inherit !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark-mode .badge.text-primary {
+  color: #66aaff !important;
+  background-color: rgba(102, 170, 255, 0.1) !important;
+}
+
+body.dark-mode .badge.text-success {
+  color: #51cf66 !important;
+  background-color: rgba(81, 207, 102, 0.1) !important;
+}
+
+body.dark-mode .badge.text-info {
+  color: #339af0 !important;
+  background-color: rgba(51, 154, 240, 0.1) !important;
+}
+
+body.dark-mode .badge.text-warning {
+  color: #fcc419 !important;
+  background-color: rgba(252, 196, 25, 0.1) !important;
+}
+
+body.dark-mode .badge.text-danger {
+  color: #ff6b6b !important;
+  background-color: rgba(255, 107, 107, 0.1) !important;
+}
+
+body.dark-mode .badge.text-dark {
+  color: #f1f3f5 !important;
+  background-color: rgba(241, 243, 245, 0.1) !important;
+}
+
+body.dark-mode .badge.text-secondary {
+  color: #ced4da !important;
+  background-color: rgba(206, 212, 218, 0.1) !important;
+}
+
+body.dark-mode .education-card {
+  background: rgba(50, 50, 50, 0.9) !important;
+}
+
+body.dark-mode .education-logo {
+  background: #2d3748 !important;
+  border: 1px solid #495057 !important;
 }
 
 /* Modal Styling */
@@ -415,6 +472,30 @@ body.dark-mode .btn-outline-primary:hover {
 .footer p {
   margin: 0;
   font-size: 0.85rem;
+}
+
+/* Ensure all text is visible in dark mode */
+body.dark-mode .text-dark {
+  color: #e9ecef !important;
+}
+
+body.dark-mode .card-text {
+  color: #e9ecef !important;
+}
+
+body.dark-mode .h1,
+body.dark-mode .h2,
+body.dark-mode .h3,
+body.dark-mode .h4,
+body.dark-mode .h5,
+body.dark-mode .h6,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: #f8f9fa !important;
 }
 
 /* Responsive adjustments */
