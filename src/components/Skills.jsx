@@ -58,7 +58,7 @@ const Skills = ({ className }) => {
                     {category.skills.map((skill, skillIndex) => (
                       <span
                         key={skillIndex}
-                        className={`badge bg-${category.color} bg-opacity-10 text-${category.color} px-3 py-2`}
+                        className={`badge bg-${category.color} bg-opacity-10 text-${category.color} px-3 py-2 d-inline-block`}
                       >
                         {skill}
                       </span>
