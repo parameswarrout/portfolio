@@ -17,7 +17,7 @@ const Education = ({ className = '' }) => {
                     style={{ width: '70px', height: '70px', objectFit: 'contain' }}
                   />
                   <div>
-                    <h4 className="card-title fw-bold">IIT Patna</h4>
+                    <h4 className="card-title fw-bold">Indian Institute of Technology (IIT) Patna</h4>
                     <h6 className="text-muted mb-2">M.Tech in Mechanical Engineering</h6>
                     <p className="mb-1"><strong>Duration:</strong> July 2022 - July 2024</p>
                     <p className="mb-0"><strong>Score:</strong> CPI: 7.79</p>
@@ -37,7 +37,7 @@ const Education = ({ className = '' }) => {
                     style={{ width: '70px', height: '70px', objectFit: 'contain' }}
                   />
                   <div>
-                    <h4 className="card-title fw-bold">BPUT</h4>
+                    <h4 className="card-title fw-bold">Biju Patnaik University of Technology (BPUT)</h4>
                     <h6 className="text-muted mb-2">B.Tech in Mechanical Engineering</h6>
                     <p className="mb-1"><strong>Duration:</strong> June 2013 - June 2017</p>
                     <p className="mb-0"><strong>Score:</strong> CPI: 7.67</p>

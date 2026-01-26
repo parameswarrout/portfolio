@@ -11,30 +11,17 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ProjectModal from './components/ProjectModal';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import './styles/variables.css';
+import './styles/global.css';
+import './styles/shared.css';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
   const [activeModal, setActiveModal] = useState(null);
 
   useEffect(() => {
-    // Check if dark mode was previously enabled
-    const savedDarkMode = localStorage.getItem('darkMode') === 'enabled';
-    if (savedDarkMode) {
-      setDarkMode(true);
-    }
-  }, []);
-
-  useEffect(() => {
-    // Apply dark mode class to body
-    if (darkMode) {
-      document.body.classList.add('dark-mode');
-      localStorage.setItem('darkMode', 'enabled');
-    } else {
-      document.body.classList.remove('dark-mode');
-      localStorage.setItem('darkMode', 'disabled');
-    }
-
+    // Permanently enable dark mode
+    document.body.classList.add('dark-mode');
+    
     // Scroll animation effect
     const handleScroll = () => {
       const elements = document.querySelectorAll('.section');
@@ -52,11 +39,7 @@ function App() {
     handleScroll(); // Run once on load
 
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [darkMode]);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
+  }, []);
 
   const openModal = (modalId) => {
     setActiveModal(modalId);
@@ -67,8 +50,8 @@ function App() {
   };
 
   return (
-    <div className={darkMode ? 'dark-mode' : ''}>
-      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+    <div className="dark-mode">
+      <Navbar />
       <Header />
       <About className="animate-on-scroll" />
       <Skills className="animate-on-scroll" />

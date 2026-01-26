@@ -7,14 +7,16 @@ const Experience = ({ className = '' }) => {
         <h2 className="section-title text-center">Experience</h2>
         <div className="row justify-content-center">
           <div className="col-lg-10">
-            <div className="card shadow-sm border-0">
-              <div className="card-body p-5">
-                <div className="d-flex justify-content-between align-items-start">
+            
+            {/* Crawlsight AI */}
+            <div className="card shadow-sm border-0 mb-4">
+              <div className="card-body">
+                <div className="d-flex justify-content-between align-items-start flex-wrap">
                   <div>
-                    <h4 className="card-title fw-bold">AI/Data Scientist</h4>
-                    <h5 className="text-muted">Crawlsight AI Pvt Ltd, Remote</h5>
+                    <h4 className="card-title fw-bold">Data & AI Engineer</h4>
+                    <h5 className="text-muted">Crawlsight AI (Remote)</h5>
                   </div>
-                  <span className="badge bg-primary bg-opacity-10 text-primary px-3 py-2 fw-bold">August 2024 – Present</span>
+                  <span className="badge bg-primary bg-opacity-10 text-primary px-3 py-2 fw-bold">Aug 2024 – Present</span>
                 </div>
                 <div className="mt-4">
                   <ul className="list-unstyled">
@@ -22,7 +24,7 @@ const Experience = ({ className = '' }) => {
                       <div className="d-flex">
                         <div className="me-3 text-primary fs-4">✓</div>
                         <div>
-                          <p className="mb-1 fw-semibold">Developed and maintained Python-based web scrapers and data extraction pipelines for various websites and APIs.</p>
+                          <p className="mb-1 fw-semibold"><strong>Production RAG Architecture:</strong> Architected semantic search pipelines using LangChain and FAISS, reducing query latency to &lt;120ms for AI-driven search contexts.</p>
                         </div>
                       </div>
                     </li>
@@ -30,7 +32,7 @@ const Experience = ({ className = '' }) => {
                       <div className="d-flex">
                         <div className="me-3 text-primary fs-4">✓</div>
                         <div>
-                          <p className="mb-1 fw-semibold">Built robust, scalable data pipelines with automated validation and cleansing mechanisms for high-quality datasets.</p>
+                          <p className="mb-1 fw-semibold"><strong>High-Volume Ingestion:</strong> Built and orchestrated distributed scrapers (Scrapy) processing 1M+ records/month, maintaining 99.9% data availability via automated health checks.</p>
                         </div>
                       </div>
                     </li>
@@ -38,7 +40,7 @@ const Experience = ({ className = '' }) => {
                       <div className="d-flex">
                         <div className="me-3 text-primary fs-4">✓</div>
                         <div>
-                          <p className="mb-1 fw-semibold">Implemented semantic search & RAG (Retrieval-Augmented Generation) systems using LangChain, HuggingFace, and FAISS for intelligent information retrieval.</p>
+                          <p className="mb-1 fw-semibold"><strong>Scalable ETL Systems:</strong> Engineered fault-tolerant data pipelines with FastAPI microservices, handling automated retry logic, proxy rotation, and data validation.</p>
                         </div>
                       </div>
                     </li>
@@ -46,42 +48,72 @@ const Experience = ({ className = '' }) => {
                       <div className="d-flex">
                         <div className="me-3 text-primary fs-4">✓</div>
                         <div>
-                          <p className="mb-1 fw-semibold">Designed and deployed real-time REST APIs using FastAPI for AI-powered search and data analysis services.</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="mb-3">
-                      <div className="d-flex">
-                        <div className="me-3 text-primary fs-4">✓</div>
-                        <div>
-                          <p className="mb-1 fw-semibold">Developed machine learning models for data analysis and prediction tasks, with performance optimization and monitoring.</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="mb-3">
-                      <div className="d-flex">
-                        <div className="me-3 text-primary fs-4">✓</div>
-                        <div>
-                          <p className="mb-1 fw-semibold">Created data visualization dashboards and reports to provide actionable insights to stakeholders.</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="mb-3">
-                      <div className="d-flex">
-                        <div className="me-3 text-primary fs-4">✓</div>
-                        <div>
-                          <p className="mb-1 fw-semibold">Integrated Generative AI models to enhance data processing and automation capabilities.</p>
+                          <p className="mb-1 fw-semibold"><strong>Data Marketplace:</strong> Developed the core data delivery platform, integrating Stripe/Razorpay for monetization and OAuth2 for secure API consumption.</p>
                         </div>
                       </div>
                     </li>
                   </ul>
-                  <div className="mt-4 pt-3 border-top">
-                    <h6 className="fw-bold text-primary mb-3">Technologies Used</h6>
-                    <p className="mb-0"><strong>Environment:</strong> Python, Scrapy, BeautifulSoup, FastAPI, LangChain, HuggingFace, FAISS, TensorFlow, Pandas, NumPy, AWS, Docker, etc.</p>
-                  </div>
                 </div>
               </div>
             </div>
+
+            {/* AlmaBetter */}
+            <div className="card shadow-sm border-0">
+              <div className="card-body">
+                <div className="d-flex justify-content-between align-items-start flex-wrap">
+                  <div>
+                    <h4 className="card-title fw-bold">Data Science Trainee</h4>
+                    <h5 className="text-muted">AlmaBetter (Remote)</h5>
+                  </div>
+                  <span className="badge bg-secondary bg-opacity-10 text-secondary px-3 py-2 fw-bold">Jan 2024 – Aug 2024</span>
+                </div>
+                <div className="mt-4">
+                  <ul className="list-unstyled">
+                    <li className="mb-3">
+                      <div className="d-flex">
+                        <div className="me-3 text-secondary fs-4">✓</div>
+                        <div>
+                          <p className="mb-1 fw-semibold">Built data ingestion workflows and automated EDA pipelines for ML datasets.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="mb-3">
+                      <div className="d-flex">
+                        <div className="me-3 text-secondary fs-4">✓</div>
+                        <div>
+                          <p className="mb-1 fw-semibold">Developed ML models (XGBoost, SVM) with cross-validation and ROC-AUC evaluation.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="mb-3">
+                      <div className="d-flex">
+                        <div className="me-3 text-secondary fs-4">✓</div>
+                        <div>
+                          <p className="mb-1 fw-semibold">Designed analytics dashboards using Power BI and Seaborn.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="mb-3">
+                      <div className="d-flex">
+                        <div className="me-3 text-secondary fs-4">✓</div>
+                        <div>
+                          <p className="mb-1 fw-semibold">Performed feature engineering and feature selection to improve model performance and stability.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="mb-3">
+                      <div className="d-flex">
+                        <div className="me-3 text-secondary fs-4">✓</div>
+                        <div>
+                          <p className="mb-1 fw-semibold">Handled missing values, outliers, and data imbalance using statistical and ML-based techniques.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

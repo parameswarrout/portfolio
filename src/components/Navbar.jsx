@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import './Navbar.css';
 
-const Navbar = ({ darkMode, toggleDarkMode }) => {
+const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -59,15 +60,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <li className="nav-item">
               <a className="nav-link" href="#contact" onClick={closeMenu}>Contact</a>
             </li>
-            <li className="nav-item">
-              <button
-                id="darkModeToggle"
-                className="btn btn-outline-light ms-2"
-                onClick={toggleDarkMode}
-              >
-                {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
-              </button>
-            </li>
+
           </ul>
         </div>
       </div>

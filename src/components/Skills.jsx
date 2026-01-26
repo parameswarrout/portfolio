@@ -3,44 +3,39 @@ import React from 'react';
 const Skills = ({ className }) => {
   const skillCategories = [
     {
-      category: "AI/ML & Deep Learning",
-      skills: ["TensorFlow", "Keras", "PyTorch", "Scikit-Learn", "Pandas", "NumPy"],
+      category: "Programming",
+      skills: ["Python", "SQL", "JavaScript", "FastAPI", "React", "Node.js", "HTML", "CSS"],
       color: "primary"
     },
     {
-      category: "Gen AI & NLP",
-      skills: ["HuggingFace", "LangChain", "OpenAI API", "Transformers", "NLTK", "SpaCy"],
-      color: "success"
-    },
-    {
       category: "Data Engineering",
-      skills: ["Apache Spark", "Airflow", "Kafka", "BeautifulSoup", "Scrapy", "FastAPI"],
+      skills: ["Scrapy", "BeautifulSoup", "Pandas", "NumPy", "ETL Pipelines", "Data Warehousing"],
       color: "info"
     },
     {
-      category: "Data Analysis & Visualization",
-      skills: ["Matplotlib", "Seaborn", "Plotly", "Power BI", "Tableau", "Pandas"],
-      color: "warning"
-    },
-    {
       category: "Databases",
-      skills: ["MySQL", "PostgreSQL", "MongoDB", "Redis", "Elasticsearch"],
+      skills: ["MySQL", "PostgreSQL", "MongoDB", "Vector Databases (FAISS)"],
       color: "danger"
     },
     {
-      category: "Programming Languages",
-      skills: ["Python", "SQL", "R", "JavaScript", "HTML/CSS"],
-      color: "dark"
-    },
-    {
       category: "Cloud & DevOps",
-      skills: ["AWS (EC2, S3, Lambda)", "Docker", "Kubernetes", "Git", "CI/CD"],
+      skills: ["AWS (EC2, S3)", "Heroku", "Docker", "Git", "GitHub Actions", "CI/CD"],
       color: "secondary"
     },
     {
-      category: "Tools & Platforms",
-      skills: ["Jupyter Notebook", "VS Code", "Colab", "Streamlit", "FAISS"],
+      category: "AI/ML",
+      skills: ["LangChain", "HuggingFace", "TensorFlow", "Scikit-learn", "Semantic Search", "RAG"],
+      color: "success"
+    },
+    {
+      category: "Payments",
+      skills: ["Razorpay API", "Stripe API", "Subscriptions", "Transaction Processing"],
       color: "dark"
+    },
+    {
+      category: "Visualization",
+      skills: ["Power BI", "Tableau", "Matplotlib", "Seaborn", "Plotly", "Grafana"],
+      color: "warning"
     }
   ];
 

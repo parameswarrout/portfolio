@@ -1,0 +1,38 @@
+/* Modal */
+.modal-content {
+  background: var(--dark-card);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--border-radius);
+}
+
+.modal-header {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--accent-color)
+  );
+  border-bottom: none;
+  color: white;
+}
+
+.modal-body {
+  color: var(--text-secondary);
+}
+
+.modal-body p,
+.modal-body ul,
+.modal-body li {
+  color: var(--text-secondary);
+}
+
+.modal-body strong {
+  color: var(--text-primary);
+}
+
+.btn-close {
+  filter: invert(1);
+}
+
+body:not(.dark-mode) .btn-close {
+  filter: invert(0);
+}
