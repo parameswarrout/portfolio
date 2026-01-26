@@ -1,4 +1,5 @@
 import React from 'react';
+import './ProjectModal.css';
 
 const ProjectModal = ({ modalId, isOpen, closeModal }) => {
   // Function to render modal content based on modalId
@@ -8,22 +9,53 @@ const ProjectModal = ({ modalId, isOpen, closeModal }) => {
         return (
           <>
             <div className="modal-header">
-              <h5 className="modal-title"><strong>Prediction of Tensile Strength of Friction Stir Weld </strong></h5>
+              <h5 className="modal-title"><strong>Enterprise RAG Orchestration Agent</strong></h5>
               <button type="button" className="btn-close" onClick={closeModal}></button>
             </div>
             <div className="modal-body">
-              <p><strong>Duration:</strong>July 2023 – Jan 2024</p>
-              <p><strong>Description:</strong> Developed a predictive ML/DL model for weld strength.</p>
+              <p className="text-muted mb-3">GenAI Platform</p>
               <ul>
-                <li>Developed a predictive model using Python, Pandas, Numpy, Scikit-learn, and TensorFlow, achieving high accuracy in predicting weld joint tensile strength.</li>
-                <li>Conducted data preprocessing, exploratory data analysis, and feature engineering to enhance model performance.</li>
-                <li>Evaluated and optimized models with metrics like R², MAE, and MSE, providing actionable insights for quality control and process optimization.</li>
+                <li className="mb-2"><strong>Hybrid Retrieval Architecture:</strong> Engineered a high-precision search system combining Semantic Search (FAISS) and Keyword Matching (BM25), utilizing Cross-Encoders for result reranking to maximize context relevance.</li>
+                <li className="mb-2"><strong>Async Streaming & Multi-LLM Routing:</strong> Built a FastAPI backend with asynchronous streaming support, enabling dynamic routing between OpenAI, Gemini, and local LLMs (Ollama) based on query complexity.</li>
+                <li className="mb-2"><strong>Full-Stack Observability:</strong> Deployed a production-ready React 19 frontend and instrumented the backend with Prometheus metrics and correlation IDs for request tracing.</li>
               </ul>
-              <p><strong>Technologies:</strong> TensorFlow, Scikit-learn, Numpy, Pandas</p>
             </div>
           </>
         );
       case 2:
+        return (
+          <>
+            <div className="modal-header">
+              <h5 className="modal-title"><strong>Serverless Media Data Aggregation Pipeline</strong></h5>
+              <button type="button" className="btn-close" onClick={closeModal}></button>
+            </div>
+            <div className="modal-body">
+              <ul>
+                <li className="mb-2"><strong>Automated Extraction Engine:</strong> Developed a Python-based scraper to bypass high-latency UI elements (ads, CAPTCHAs, wait-timers) and successfully extract direct media access links and metadata.</li>
+                <li className="mb-2"><strong>Zero-Cost Infrastructure:</strong> Architected a serverless workflow using GitHub Actions (Cron) to execute daily data extraction jobs, eliminating the need for paid cloud compute (EC2).</li>
+                <li className="mb-2"><strong>API-Driven Storage:</strong> Integrated Google Sheets API as a lightweight database, automating the structured storage of movie titles, unique IDs, and download URLs for real-time access.</li>
+              </ul>
+            </div>
+          </>
+        );
+      case 3:
+        return (
+          <>
+            <div className="modal-header">
+              <h5 className="modal-title"><strong>Physics-Informed Neural Networks (PINNs)</strong></h5>
+              <button type="button" className="btn-close" onClick={closeModal}></button>
+            </div>
+            <div className="modal-body">
+              <p className="text-muted mb-3">M.Tech Thesis | Predictive Modeling</p>
+              <ul>
+                <li className="mb-2"><strong>Deep Learning for Material Properties:</strong> Developed a multivariate regression model to predict Ultimate Tensile Strength (UTS) of Friction Stir Welded joints, utilizing inputs like RPM, traverse speed, tool geometry, and thermal profiles.</li>
+                <li className="mb-2"><strong>Physics-Aware Architecture:</strong> Designed a novel framework combining data-driven deep learning with physical conservation laws (PINNs) to simulate process stability and defect formation with high accuracy.</li>
+                <li className="mb-2"><strong>Real-Time Visualization:</strong> Built interactive dashboards to visualize complex time-series data and model predictions for real-time anomaly detection.</li>
+              </ul>
+            </div>
+          </>
+        );
+      case 4:
         return (
           <>
             <div className="modal-header">
@@ -41,7 +73,7 @@ const ProjectModal = ({ modalId, isOpen, closeModal }) => {
             </div>
           </>
         );
-      case 3:
+      case 5:
         return (
           <>
             <div className="modal-header">
@@ -59,7 +91,7 @@ const ProjectModal = ({ modalId, isOpen, closeModal }) => {
             </div>
           </>
         );
-      case 4:
+      case 6:
         return (
           <>
             <div className="modal-header">

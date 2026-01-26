@@ -41,9 +41,9 @@ const Certifications = () => {
   ];
 
   return (
-    <section id="certifications" className="section bg-light">
+    <section id="certifications" className="section">
       <div className="container">
-        <h2 className="section-title text-center text-dark">Certifications</h2>
+        <h2 className="section-title text-center">Certifications</h2>
         <div className="row">
           {certificates.map((cert) => (
             <div className="col-md-6 mb-4" key={cert.id}>

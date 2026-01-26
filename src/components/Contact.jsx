@@ -17,9 +17,6 @@ const Contact = () => {
               <a href="https://github.com/parameswarrout" target="_blank" rel="noopener noreferrer" className="btn btn-dark px-4 py-2">
                 Github
               </a>
-              <a href="https://parameswarrout.github.io/" target="_blank" rel="noopener noreferrer" className="btn btn-info text-white px-4 py-2">
-                Website
-              </a>
             </div>
           </div>
         </div>
