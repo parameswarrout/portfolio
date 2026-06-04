@@ -2,10 +2,6 @@
 
 A modern, responsive portfolio website showcasing my expertise as a Data Scientist with focus on AI/ML, Data Engineering, and Gen AI. Built with React and Vite, featuring a sleek dark-themed design with smooth animations and interactive elements.
 
-## 🚀 Live Demo
-
-[View Live Portfolio](https://parameswarrout.github.io/) 
-
 ## ✨ Features
 
 - **Responsive Design**: Works beautifully on all devices
