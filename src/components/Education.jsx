@@ -8,8 +8,8 @@ const Education = ({ className = '' }) => {
       link: "https://www.coursera.org/account/accomplishments/specialization/certificate/J8EBV79B9YJT",
       logo: (
         <img
-          src="/images/deeplearning.png"
-          alt="DeepLearning.AI Logo"
+          src="/images/coursera.svg"
+          alt="Coursera Logo"
           style={{ width: '22px', height: '22px', objectFit: 'contain' }}
         />
       )
@@ -20,8 +20,8 @@ const Education = ({ className = '' }) => {
       link: "https://www.coursera.org/account/accomplishments/specialization/certificate/Q3UPRJRKA7TC",
       logo: (
         <img
-          src="/images/deeplearning.png"
-          alt="DeepLearning.AI Logo"
+          src="/images/coursera.svg"
+          alt="Coursera Logo"
           style={{ width: '22px', height: '22px', objectFit: 'contain' }}
         />
       )
@@ -44,7 +44,7 @@ const Education = ({ className = '' }) => {
       link: "https://www.udemy.com/certificate/UC-9e466811-2564-4e18-a218-498dab2d9deb/",
       logo: (
         <img
-          src="/images/udemy.png"
+          src="/images/udemy.svg"
           alt="Udemy Logo"
           style={{ width: '22px', height: '22px', objectFit: 'contain' }}
         />
@@ -56,7 +56,7 @@ const Education = ({ className = '' }) => {
       link: "https://www.udemy.com/certificate/UC-c0111176-0347-49ea-917f-9e31ff3e247b/",
       logo: (
         <img
-          src="/images/udemy.png"
+          src="/images/udemy.svg"
           alt="Udemy Logo"
           style={{ width: '22px', height: '22px', objectFit: 'contain' }}
         />
@@ -68,7 +68,7 @@ const Education = ({ className = '' }) => {
       link: "https://www.udemy.com/certificate/UC-583daf29-eed8-40a4-bc3e-975d005121b3/",
       logo: (
         <img
-          src="/images/udemy.png"
+          src="/images/udemy.svg"
           alt="Udemy Logo"
           style={{ width: '22px', height: '22px', objectFit: 'contain' }}
         />
@@ -150,11 +150,12 @@ const Education = ({ className = '' }) => {
                   {certifications.map((cert, index) => (
                     <div key={index} className="d-flex justify-content-between align-items-center border-bottom border-light border-opacity-10 pb-3 mb-1 gap-3">
                       <div className="d-flex align-items-center gap-3">
-                        <div className="d-flex align-items-center justify-content-center bg-white bg-opacity-5 rounded-2" style={{ 
+                        <div className="d-flex align-items-center justify-content-center rounded-2" style={{ 
                           width: '36px', 
                           height: '36px', 
                           minWidth: '36px',
-                          border: '1px solid rgba(255, 255, 255, 0.05)'
+                          background: 'rgba(255, 255, 255, 0.03)',
+                          border: '1px solid var(--glass-border)'
                         }}>
                           {cert.logo}
                         </div>

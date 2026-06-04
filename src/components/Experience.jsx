@@ -58,18 +58,19 @@ const Experience = ({ className = '' }) => {
                   <div className="card-body p-4">
                     <div className="d-flex justify-content-between align-items-start flex-wrap gap-2">
                       <div className="d-flex align-items-center gap-3">
-                        <div className="d-flex align-items-center justify-content-center bg-white rounded-2" style={{ 
-                          width: '45px', 
-                          height: '45px', 
-                          padding: '5px',
-                          border: '1px solid var(--glass-border)'
-                        }}>
-                          <img
-                            src="/images/crawlsight.svg"
-                            alt="Crawlsight AI Logo"
-                            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
-                          />
-                        </div>
+                        <img
+                          src="/images/crawlsight.svg"
+                          alt="Crawlsight AI Logo"
+                          className="company-logo rounded-2"
+                          style={{ 
+                            width: '45px', 
+                            height: '45px', 
+                            objectFit: 'contain',
+                            border: '1px solid var(--glass-border)',
+                            padding: '4px',
+                            background: 'rgba(255, 255, 255, 0.05)'
+                          }}
+                        />
                         <div>
                           <h4 className="fw-bold mb-1 text-white" style={{ fontSize: '1.25rem' }}>AI & Data Engineer</h4>
                           <h5 className="text-secondary mb-0 fw-medium" style={{ fontSize: '1rem' }}>Crawlsight AI · Full-time</h5>
@@ -120,18 +121,19 @@ const Experience = ({ className = '' }) => {
                   <div className="card-body p-4">
                     <div className="d-flex justify-content-between align-items-start flex-wrap gap-2">
                       <div className="d-flex align-items-center gap-3">
-                        <div className="d-flex align-items-center justify-content-center bg-white rounded-2" style={{ 
-                          width: '45px', 
-                          height: '45px', 
-                          padding: '5px',
-                          border: '1px solid var(--glass-border)'
-                        }}>
-                          <img
-                            src="/images/almabetter.png"
-                            alt="AlmaBetter Logo"
-                            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
-                          />
-                        </div>
+                        <img
+                          src="/images/almabetter.png"
+                          alt="AlmaBetter Logo"
+                          className="company-logo rounded-2"
+                          style={{ 
+                            width: '45px', 
+                            height: '45px', 
+                            objectFit: 'contain',
+                            border: '1px solid var(--glass-border)',
+                            padding: '4px',
+                            background: 'rgba(255, 255, 255, 0.05)'
+                          }}
+                        />
                         <div>
                           <h4 className="fw-bold mb-1 text-white" style={{ fontSize: '1.25rem' }}>Data Science Trainee</h4>
                           <h5 className="text-secondary mb-0 fw-medium" style={{ fontSize: '1rem' }}>AlmaBetter (Remote)</h5>

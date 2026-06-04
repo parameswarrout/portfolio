@@ -57,7 +57,7 @@ const Navbar = () => {
               <a className="nav-link text-uppercase" href="#projects" onClick={closeMenu}>Projects</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-uppercase" href="#education" onClick={closeMenu}>Credentials</a>
+              <a className="nav-link text-uppercase" href="#education" onClick={closeMenu}>Education & Certifications</a>
             </li>
             <li className="nav-item">
               <a className="nav-link text-uppercase btn-contact" href="#contact" onClick={closeMenu}>Contact</a>
