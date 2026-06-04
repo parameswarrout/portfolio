@@ -3,34 +3,76 @@ import React from 'react';
 const Education = ({ className = '' }) => {
   const certifications = [
     {
-      title: "Machine Learning Specalization",
+      title: "Machine Learning Specialization",
       issuer: "DeepLearning.AI / Coursera",
-      link: "https://www.coursera.org/account/accomplishments/specialization/certificate/J8EBV79B9YJT"
+      link: "https://www.coursera.org/account/accomplishments/specialization/certificate/J8EBV79B9YJT",
+      logo: (
+        <img
+          src="/images/deeplearning.png"
+          alt="DeepLearning.AI Logo"
+          style={{ width: '22px', height: '22px', objectFit: 'contain' }}
+        />
+      )
     },
     {
-      title: "Deep Learning Specalization",
+      title: "Deep Learning Specialization",
       issuer: "DeepLearning.AI / Coursera",
-      link: "https://www.coursera.org/account/accomplishments/specialization/certificate/Q3UPRJRKA7TC"
+      link: "https://www.coursera.org/account/accomplishments/specialization/certificate/Q3UPRJRKA7TC",
+      logo: (
+        <img
+          src="/images/deeplearning.png"
+          alt="DeepLearning.AI Logo"
+          style={{ width: '22px', height: '22px', objectFit: 'contain' }}
+        />
+      )
     },
     {
       title: "Full Stack Data Science & AI",
       issuer: "AlmaBetter",
-      link: "https://verified.sertifier.com/en/verify/51975435184061/"
+      link: "https://verified.sertifier.com/en/verify/51975435184061/",
+      logo: (
+        <img
+          src="/images/almabetter.png"
+          alt="AlmaBetter Logo"
+          style={{ width: '22px', height: '22px', objectFit: 'contain' }}
+        />
+      )
     },
     {
       title: "The Ultimate MySQL Bootcamp",
       issuer: "Udemy",
-      link: "https://www.udemy.com/certificate/UC-9e466811-2564-4e18-a218-498dab2d9deb/"
+      link: "https://www.udemy.com/certificate/UC-9e466811-2564-4e18-a218-498dab2d9deb/",
+      logo: (
+        <img
+          src="/images/udemy.png"
+          alt="Udemy Logo"
+          style={{ width: '22px', height: '22px', objectFit: 'contain' }}
+        />
+      )
     },
     {
       title: "TensorFlow Deep Learning Bootcamp",
       issuer: "Udemy",
-      link: "https://www.udemy.com/certificate/UC-c0111176-0347-49ea-917f-9e31ff3e247b/"
+      link: "https://www.udemy.com/certificate/UC-c0111176-0347-49ea-917f-9e31ff3e247b/",
+      logo: (
+        <img
+          src="/images/udemy.png"
+          alt="Udemy Logo"
+          style={{ width: '22px', height: '22px', objectFit: 'contain' }}
+        />
+      )
     },
     {
       title: "Natural Language Processing",
       issuer: "Udemy",
-      link: "https://www.udemy.com/certificate/UC-583daf29-eed8-40a4-bc3e-975d005121b3/"
+      link: "https://www.udemy.com/certificate/UC-583daf29-eed8-40a4-bc3e-975d005121b3/",
+      logo: (
+        <img
+          src="/images/udemy.png"
+          alt="Udemy Logo"
+          style={{ width: '22px', height: '22px', objectFit: 'contain' }}
+        />
+      )
     }
   ];
 
@@ -102,24 +144,34 @@ const Education = ({ className = '' }) => {
             <h2 className="section-title text-start mb-4 ms-0 left-0 transform-none" style={{ left: 0, transform: 'none' }}>
               Certifications
             </h2>
-            <div className="card border-0 h-100">
+            <div className="card border-0">
               <div className="card-body p-4 d-flex flex-column justify-content-between">
                 <div className="d-flex flex-column gap-3">
                   {certifications.map((cert, index) => (
-                    <div key={index} className="d-flex justify-content-between align-items-center border-bottom border-light border-opacity-10 pb-2">
-                      <div>
-                        <h6 className="fw-bold mb-0 text-white" style={{ fontSize: '0.95rem' }}>
-                          {cert.title}
-                        </h6>
-                        <span className="text-secondary small" style={{ fontSize: '0.8rem' }}>
-                          {cert.issuer}
-                        </span>
+                    <div key={index} className="d-flex justify-content-between align-items-center border-bottom border-light border-opacity-10 pb-3 mb-1 gap-3">
+                      <div className="d-flex align-items-center gap-3">
+                        <div className="d-flex align-items-center justify-content-center bg-white bg-opacity-5 rounded-2" style={{ 
+                          width: '36px', 
+                          height: '36px', 
+                          minWidth: '36px',
+                          border: '1px solid rgba(255, 255, 255, 0.05)'
+                        }}>
+                          {cert.logo}
+                        </div>
+                        <div>
+                          <h6 className="fw-bold mb-0 text-white" style={{ fontSize: '0.92rem', lineHeight: '1.4' }}>
+                            {cert.title}
+                          </h6>
+                          <span className="text-secondary small" style={{ fontSize: '0.78rem' }}>
+                            {cert.issuer}
+                          </span>
+                        </div>
                       </div>
                       <a
                         href={cert.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-dark btn-sm py-1 px-3 fs-7"
+                        className="btn btn-dark btn-sm py-1 px-3 fs-7 flex-shrink-0"
                         style={{ fontSize: '0.8rem' }}
                       >
                         Verify
