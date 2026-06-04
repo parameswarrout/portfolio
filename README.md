@@ -129,10 +129,6 @@ The project is configured for deployment on GitHub Pages. To deploy:
 2. The `dist` folder contains the production-ready build
 3. Configure GitHub Pages to serve from the `dist` folder
 
-## 🛡️ License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🤝 Contributing
 
 While this is a personal portfolio, suggestions and improvements are welcome:
