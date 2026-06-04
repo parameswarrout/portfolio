@@ -36,7 +36,7 @@ const Header = () => {
                   <span className="badge-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                   </span>
-                  <span className="badge-label text-truncate">Hyderabad, India</span>
+                  <span className="badge-label text-truncate">Bengaluru, India</span>
                 </span>
                 <span 
                   className="badge-item clickable w-100 justify-content-center" 
@@ -63,6 +63,7 @@ const Header = () => {
               </div>
 
               <div className="d-flex flex-column gap-2 w-100">
+                {/* 
                 <a 
                   href="/resume/Resume for all ai_data-enginerring jan 2026.docx" 
                   download="Resume_Parameswar_Rout.docx"
@@ -70,6 +71,7 @@ const Header = () => {
                 >
                   Download Resume
                 </a>
+                */}
                 <a href="#projects" className="btn btn-dark w-100 py-2.5">
                   Explore Projects
                 </a>
