@@ -1,38 +1,81 @@
-/* Modal */
-.modal-content {
-  background: var(--dark-card);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--border-radius);
+/* Modal Backdrop overlay when shown */
+.modal.show {
+  background: rgba(5, 7, 12, 0.85) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
 }
 
-.modal-header {
+/* Modal Content Container Override */
+body.dark-mode .modal-content,
+#projectModal .modal-content {
+  background: rgba(17, 24, 39, 0.9) !important;
+  backdrop-filter: blur(24px) saturate(120%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(120%) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: var(--border-radius-lg) !important;
+  box-shadow: var(--shadow-xl) !important;
+  color: var(--text-secondary) !important;
+  overflow: hidden;
+}
+
+/* Modal Header Override */
+body.dark-mode .modal-header,
+#projectModal .modal-header {
   background: linear-gradient(
     135deg,
-    var(--primary-color),
-    var(--accent-color)
-  );
-  border-bottom: none;
-  color: white;
+    rgba(99, 102, 241, 0.15),
+    rgba(139, 92, 246, 0.15)
+  ) !important;
+  border-bottom: 1px solid var(--glass-border) !important;
+  padding: var(--spacing-lg) !important;
+  color: var(--text-primary) !important;
 }
 
-.modal-body {
-  color: var(--text-secondary);
+body.dark-mode .modal-title,
+#projectModal .modal-title {
+  font-weight: 800 !important;
+  font-size: 1.4rem !important;
+  letter-spacing: -0.2px !important;
+  color: var(--text-primary) !important;
 }
 
-.modal-body p,
-.modal-body ul,
-.modal-body li {
-  color: var(--text-secondary);
+/* Modal Body Override */
+body.dark-mode .modal-body,
+#projectModal .modal-body {
+  padding: var(--spacing-lg) !important;
+  color: var(--text-secondary) !important;
+  background: transparent !important;
 }
 
-.modal-body strong {
-  color: var(--text-primary);
+#projectModal .modal-body ul {
+  padding-left: var(--spacing-md) !important;
+  margin-bottom: var(--spacing-lg) !important;
 }
 
-.btn-close {
-  filter: invert(1);
+#projectModal .modal-body li {
+  margin-bottom: var(--spacing-sm) !important;
+  color: var(--text-secondary) !important;
+}
+
+#projectModal .modal-body strong {
+  color: var(--text-primary) !important;
+}
+
+/* Close Button Override */
+body.dark-mode .btn-close,
+#projectModal .btn-close {
+  filter: invert(1) !important;
+  opacity: 0.7 !important;
+  transition: var(--transition) !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+body.dark-mode .btn-close:hover,
+#projectModal .btn-close:hover {
+  opacity: 1 !important;
 }
 
 body:not(.dark-mode) .btn-close {
-  filter: invert(0);
+  filter: invert(0) !important;
 }

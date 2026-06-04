@@ -1,82 +1,79 @@
 # Parameswar Rout - Professional Portfolio
 
-A modern, responsive portfolio website showcasing my expertise as a Data Scientist with focus on AI/ML, Data Engineering, and Gen AI.
+A modern, responsive portfolio website showcasing my expertise as a Data Scientist with focus on AI/ML, Data Engineering, and Gen AI. Built with React and Vite, featuring a sleek dark-themed design with smooth animations and interactive elements.
 
 ## 🚀 Live Demo
 
-[View Live Portfolio](https://your-deployed-url.vercel.app) *(Replace with your actual deployment URL)*
+[View Live Portfolio](https://parameswarrout.github.io/) 
 
 ## ✨ Features
 
 - **Responsive Design**: Works beautifully on all devices
-- **Dark/Light Mode**: Toggle between themes with persistent settings
-- **Modern UI**: Clean, professional design with smooth animations
-- **Interactive Sections**: Project modals, smooth scrolling navigation
-- **Technical Skills Showcase**: Categorized skills with visual badges
-- **Project Details**: Modal-based project information display
-- **Contact Information**: Easy access to all professional links
+- **Dark Mode**: Permanently enabled dark theme for optimal viewing experience
+- **Modern UI**: Clean, professional design with scroll-triggered animations
+- **Interactive Sections**: Smooth navigation, project modals, and animated elements
+- **Comprehensive Sections**: About, Skills, Experience, Education, Projects, Certifications, and Contact
+- **Professional Layout**: Well-structured components for showcasing expertise
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React 18, JavaScript (ES6+)
+- **Frontend**: React 19, JavaScript (ES6+)
 - **Styling**: CSS3 with custom animations, Bootstrap 5
 - **Build Tool**: Vite
-- **Deployment**: Vercel/Netlify/GitHub Pages
+- **Deployment**: GitHub Pages
 - **Version Control**: Git & GitHub
 
-## 📋 Technologies & Skills Featured
+## 📋 Sections Overview
 
-### AI/ML & Deep Learning
-- TensorFlow, Keras, PyTorch
-- Scikit-Learn, Pandas, NumPy
+### About
+Personal introduction highlighting professional journey and expertise in data science and AI/ML.
 
-### Gen AI & NLP
-- HuggingFace, LangChain
-- OpenAI API, Transformers
-- NLTK, SpaCy
+### Skills
+Categorized technical skills with focus on:
+- **AI/ML & Deep Learning**: TensorFlow, Keras, PyTorch, Scikit-Learn
+- **Gen AI & NLP**: HuggingFace, LangChain, OpenAI API, Transformers
+- **Data Engineering**: Apache Spark, Airflow, Kafka, FastAPI
+- **Data Analysis & Visualization**: Matplotlib, Seaborn, Plotly, Pandas
+- **Databases & Cloud**: MySQL, PostgreSQL, MongoDB, AWS, Docker
 
-### Data Engineering
-- Apache Spark, Airflow, Kafka
-- BeautifulSoup, Scrapy
-- FastAPI
+### Experience
+Detailed work history showcasing professional roles and achievements.
 
-### Data Analysis & Visualization
-- Matplotlib, Seaborn, Plotly
-- Power BI, Tableau
-- Pandas
+### Education
+Academic background and qualifications.
 
-### Databases & Cloud
-- MySQL, PostgreSQL, MongoDB
-- AWS (EC2, S3, Lambda)
-- Docker, Kubernetes
+### Projects
+Interactive project showcase with detailed descriptions in modal windows.
+
+### Certifications
+Professional certifications and credentials.
+
+### Contact
+Easy access to professional contact information and social links.
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js (v16 or higher)
-- npm or yarn package manager
+- Node.js (v18 or higher)
+- npm package manager
 
 ### Installation
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/your-portfolio-repo.git
-   cd your-portfolio-repo
+   git clone https://github.com/parameswarrout/portfolio.git
+   cd portfolio
    ```
 
 2. Install dependencies
    ```bash
    npm install
-   # or
-   yarn install
    ```
 
 3. Start the development server
    ```bash
    npm run dev
-   # or
-   yarn dev
    ```
 
 4. Open your browser to `http://localhost:5173`
@@ -93,60 +90,56 @@ A modern, responsive portfolio website showcasing my expertise as a Data Scienti
 ```
 portfolio/
 ├── public/
+│   └── images/
 ├── src/
 │   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Header.jsx
+│   │   ├── About.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Experience.jsx
+│   │   ├── Education.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Certifications.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Footer.jsx
+│   │   └── ProjectModal.jsx
+│   ├── styles/
+│   │   ├── variables.css
+│   │   ├── global.css
+│   │   └── shared.css
+│   ├── assets/
 │   ├── App.jsx
-│   └── App.css
+│   └── main.jsx
 ├── index.html
 ├── package.json
-└── vite.config.js
+├── vite.config.js
+└── README.md
 ```
 
-## 🎨 Customization
+## 🎨 Design Highlights
 
-### Adding Your Information
-
-1. Update personal information in components:
-   - `src/components/Header.jsx` - Update name and contact info
-   - `src/components/About.jsx` - Update personal summary
-   - `src/components/Experience.jsx` - Update work experience
-   - `src/components/Skills.jsx` - Update technical skills
-   - `src/components/Projects.jsx` - Update projects
-   - `src/components/Education.jsx` - Update education
-   - `src/components/Certifications.jsx` - Update certifications
-   - `src/components/Contact.jsx` - Update contact links
-
-2. Add your profile picture to `public/images/myimage.jpg`
-
-3. Update social media links in `src/components/Contact.jsx`
-
-### Changing Colors/Theme
-
-Modify the CSS variables in `src/App.css` in the `:root` section:
-- `--primary-color`
-- `--accent-color`
-- `--dark-color`
+- **Permanently Enabled Dark Mode**: Optimized for reduced eye strain
+- **Scroll Animations**: Elements animate into view as you scroll
+- **Bootstrap Integration**: Responsive grid system and components
+- **Custom Styling**: Unique CSS for a personalized touch
+- **Image Optimization**: Properly sized and optimized profile images
 
 ## 🚀 Deployment
 
-### Deploy with Vercel
+The project is configured for deployment on GitHub Pages. To deploy:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/your-portfolio-repo)
-
-### Deploy to Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/yourusername/your-portfolio-repo)
-
-### GitHub Pages
-
-1. Update `package.json` with your GitHub Pages URL
-2. Run: `npm run deploy`
+1. Build the project: `npm run build`
+2. The `dist` folder contains the production-ready build
+3. Configure GitHub Pages to serve from the `dist` folder
 
 ## 🛡️ License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🤝 Contributing
+
+While this is a personal portfolio, suggestions and improvements are welcome:
 
 1. Fork the project
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -160,15 +153,15 @@ Parameswar Rout
 - Email: parameswar.work@gmail.com
 - LinkedIn: [Connect on LinkedIn](https://www.linkedin.com/in/parameswar73/)
 - GitHub: [GitHub Profile](https://github.com/parameswarrout)
-- Portfolio: [Your Portfolio URL](https://parameswarrout.github.io/)
+- Portfolio: [Live Portfolio](https://parameswarrout.github.io/)
 
 ## 🙏 Acknowledgments
 
 - Built with [React](https://reactjs.org/)
 - Styled with [Bootstrap](https://getbootstrap.com/)
-- Icons from [EmojiOne](https://www.emojione.com/)
-- Hosted on [Vercel](https://vercel.com/)
+- Powered by [Vite](https://vite.dev/)
+- Hosted on [GitHub Pages](https://pages.github.com/)
 
 ---
 
-⭐ If you find this project helpful, please give it a star!
+⭐ If you find this portfolio inspiring, feel free to connect with me on LinkedIn!
