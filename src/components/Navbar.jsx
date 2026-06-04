@@ -7,7 +7,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 30) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -27,9 +27,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar navbar-expand-lg navbar-dark ${scrolled ? 'bg-dark' : ''}`}>
+    <nav className={`navbar navbar-expand-lg fixed-top ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="container">
-        <a className="navbar-brand" href="#">Parameswar Rout</a>
+        <a className="navbar-brand" href="#">
+          Parameswar<span className="brand-dot">.</span>
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -41,26 +43,25 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className={`collapse navbar-collapse justify-content-end ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav align-items-center">
             <li className="nav-item">
-              <a className="nav-link" href="#about" onClick={closeMenu}>About</a>
+              <a className="nav-link text-uppercase" href="#about" onClick={closeMenu}>About</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#skills" onClick={closeMenu}>Skills</a>
+              <a className="nav-link text-uppercase" href="#skills" onClick={closeMenu}>Skills</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#experience" onClick={closeMenu}>Experience</a>
+              <a className="nav-link text-uppercase" href="#experience" onClick={closeMenu}>Experience</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#education" onClick={closeMenu}>Education</a>
+              <a className="nav-link text-uppercase" href="#projects" onClick={closeMenu}>Projects</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#projects" onClick={closeMenu}>Projects</a>
+              <a className="nav-link text-uppercase" href="#education" onClick={closeMenu}>Credentials</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact" onClick={closeMenu}>Contact</a>
+              <a className="nav-link text-uppercase btn-contact" href="#contact" onClick={closeMenu}>Contact</a>
             </li>
-
           </ul>
         </div>
       </div>

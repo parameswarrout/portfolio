@@ -1,47 +1,88 @@
-/* Navbar */
+/* Navbar Base Styles */
 .navbar {
-  background: rgba(15, 23, 42, 0.95) !important;
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--glass-border);
-  padding: 0.8rem 0;
-  transition: var(--transition);
-  position: sticky;
-  top: 0;
+  padding: 1.2rem 0;
+  transition: var(--transition-slow);
+  background: transparent;
+  border-bottom: 1px solid transparent;
   z-index: 1000;
+}
+
+/* Scrolled Floating State */
+.navbar-scrolled {
+  padding: 0.8rem 0;
+  background: rgba(11, 15, 25, 0.75) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--glass-border);
 }
 
 .navbar-brand {
   font-weight: 800;
   font-size: 1.5rem;
-  background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-primary) !important;
   letter-spacing: -0.5px;
+}
+
+.brand-dot {
+  color: var(--primary-color);
+  font-weight: 900;
 }
 
 .nav-link {
   color: var(--text-secondary) !important;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
   margin: 0 0.5rem;
   padding: 0.5rem 1rem !important;
-  border-radius: 8px;
+  border-radius: var(--border-radius-sm);
   transition: var(--transition);
 }
 
-.nav-link:hover,
-.nav-link.active {
+.nav-link:hover {
   color: var(--text-primary) !important;
-  background: rgba(255, 255, 255, 0.05);
-  transform: translateY(-1px);
 }
 
-/* Mobile Responsiveness for Navbar */
-body:not(.dark-mode) .navbar {
-  background: rgba(255, 255, 255, 0.95) !important;
-  border-bottom: 1px solid #e2e8f0;
+/* Contact Button Styling inside Nav */
+.btn-contact {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: white !important;
+  padding: 0.5rem 1.2rem !important;
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.2);
+}
+
+.btn-contact:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(99, 102, 241, 0.35);
+}
+
+/* Mobile Toggle Styles */
+.navbar-toggler {
+  border: 1px solid var(--glass-border);
+  padding: 0.4rem 0.6rem;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+
+/* Mobile Collapse Layout */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(11, 15, 25, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    margin-top: var(--spacing-sm);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .nav-link {
+    margin: var(--spacing-xs) 0;
+    width: 100%;
+    text-align: center;
+  }
 }

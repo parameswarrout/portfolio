@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
-import About from './components/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Projects from './components/Projects';
-import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ProjectModal from './components/ProjectModal';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/variables.css';
 import './styles/global.css';
 import './styles/shared.css';
@@ -30,7 +28,7 @@ function App() {
         const elementVisible = 150;
 
         if (elementTop < window.innerHeight - elementVisible) {
-          element.classList.add('animate-on-scroll', 'visible');
+          element.classList.add('visible');
         }
       });
     };
@@ -53,12 +51,10 @@ function App() {
     <div className="dark-mode">
       <Navbar />
       <Header />
-      <About className="animate-on-scroll" />
       <Skills className="animate-on-scroll" />
       <Experience className="animate-on-scroll" />
-      <Education className="animate-on-scroll" />
       <Projects openModal={openModal} className="animate-on-scroll" />
-      <Certifications className="animate-on-scroll" />
+      <Education className="animate-on-scroll" />
       <Contact className="animate-on-scroll" />
       <Footer />
       <ProjectModal

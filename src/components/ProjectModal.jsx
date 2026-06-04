@@ -2,23 +2,35 @@ import React from 'react';
 import './ProjectModal.css';
 
 const ProjectModal = ({ modalId, isOpen, closeModal }) => {
-  // Function to render modal content based on modalId
   const renderModalContent = () => {
     switch (modalId) {
       case 1:
         return (
           <>
             <div className="modal-header">
-              <h5 className="modal-title"><strong>Enterprise RAG Orchestration Agent</strong></h5>
-              <button type="button" className="btn-close" onClick={closeModal}></button>
+              <h5 className="modal-title">AI Business Intelligence Assistant</h5>
+              <button type="button" className="btn-close" onClick={closeModal} aria-label="Close"></button>
             </div>
             <div className="modal-body">
-              <p className="text-muted mb-3">GenAI Platform</p>
+              <p className="text-secondary mb-3 fw-bold">Full-Stack Enterprise Analytics Platform (Proof of Concept)</p>
               <ul>
-                <li className="mb-2"><strong>Hybrid Retrieval Architecture:</strong> Engineered a high-precision search system combining Semantic Search (FAISS) and Keyword Matching (BM25), utilizing Cross-Encoders for result reranking to maximize context relevance.</li>
-                <li className="mb-2"><strong>Async Streaming & Multi-LLM Routing:</strong> Built a FastAPI backend with asynchronous streaming support, enabling dynamic routing between OpenAI, Gemini, and local LLMs (Ollama) based on query complexity.</li>
-                <li className="mb-2"><strong>Full-Stack Observability:</strong> Deployed a production-ready React 19 frontend and instrumented the backend with Prometheus metrics and correlation IDs for request tracing.</li>
+                <li className="mb-2"><strong>SQL Translation & Validation:</strong> Translates natural language questions to structured SQL queries executed against an SQLite database, featuring query correction loops.</li>
+                <li className="mb-2"><strong>Multi-Agent Team Workspace:</strong> Orchestrates 8 specialized agents (SQL Engineer, Risk Auditor, Performance DBA, Quality Control, Design Agent, Business Strategist, Trend Forecaster, Action Planner) collaborating sequentially.</li>
+                <li className="mb-2"><strong>Advanced Integrations:</strong> Supports local Ollama server control (via auto-booting headless subprocess monitoring) and Amazon Bedrock models.</li>
+                <li className="mb-2"><strong>Modern Dashboard Features:</strong> Dynamic glassmorphic liquid date/region filters, edit & re-run raw SQL console, visual chart mappings (Recharts), and CSV dataset exports.</li>
               </ul>
+              <p className="mt-4 mb-3"><strong>Technologies:</strong> Next.js 15, React 19, FastAPI, SQLite, SQLAlchemy ORM, Amazon Bedrock, Ollama, TailwindCSS</p>
+              <div className="mt-4">
+                <a
+                  href="https://github.com/parameswarrout/ai-bi-assistant"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-dark d-inline-flex align-items-center gap-2"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>View GitHub Repository</span>
+                </a>
+              </div>
             </div>
           </>
         );
@@ -26,15 +38,29 @@ const ProjectModal = ({ modalId, isOpen, closeModal }) => {
         return (
           <>
             <div className="modal-header">
-              <h5 className="modal-title"><strong>Serverless Media Data Aggregation Pipeline</strong></h5>
-              <button type="button" className="btn-close" onClick={closeModal}></button>
+              <h5 className="modal-title">Bangalore House Price ML Project</h5>
+              <button type="button" className="btn-close" onClick={closeModal} aria-label="Close"></button>
             </div>
             <div className="modal-body">
+              <p className="text-secondary mb-3 fw-bold">End-to-End Real Estate Price Prediction Dashboard</p>
               <ul>
-                <li className="mb-2"><strong>Automated Extraction Engine:</strong> Developed a Python-based scraper to bypass high-latency UI elements (ads, CAPTCHAs, wait-timers) and successfully extract direct media access links and metadata.</li>
-                <li className="mb-2"><strong>Zero-Cost Infrastructure:</strong> Architected a serverless workflow using GitHub Actions (Cron) to execute daily data extraction jobs, eliminating the need for paid cloud compute (EC2).</li>
-                <li className="mb-2"><strong>API-Driven Storage:</strong> Integrated Google Sheets API as a lightweight database, automating the structured storage of movie titles, unique IDs, and download URLs for real-time access.</li>
+                <li className="mb-2"><strong>Model Optimization Loop:</strong> Implemented a CLI tool (`ML/train.py`) supporting XGBoost, LightGBM, and CatBoost training with Optuna optimization loops.</li>
+                <li className="mb-2"><strong>Deep Learning Architectures:</strong> Trained PyTorch architectures (Embedding MLP and TabNet) to model complex multi-feature inputs.</li>
+                <li className="mb-2"><strong>Model Interpretability:</strong> Integrated SHAP framework to generate feature importance explanations, exporting outputs directly to the UI dashboard.</li>
+                <li className="mb-2"><strong>Analysis Research:</strong> Conducted extensive Exploratory Data Analysis (EDA) and feature engineering compiled inside research notebooks.</li>
               </ul>
+              <p className="mt-4 mb-3"><strong>Technologies:</strong> Python, FastAPI, React + Vite, PyTorch, Optuna, SHAP, Scikit-learn, Docker</p>
+              <div className="mt-4">
+                <a
+                  href="https://github.com/parameswarrout/Bangalore-House-Price-Predictor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-dark d-inline-flex align-items-center gap-2"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>View GitHub Repository</span>
+                </a>
+              </div>
             </div>
           </>
         );
@@ -42,16 +68,28 @@ const ProjectModal = ({ modalId, isOpen, closeModal }) => {
         return (
           <>
             <div className="modal-header">
-              <h5 className="modal-title"><strong>Physics-Informed Neural Networks (PINNs)</strong></h5>
-              <button type="button" className="btn-close" onClick={closeModal}></button>
+              <h5 className="modal-title">Enterprise RAG Orchestration Agent</h5>
+              <button type="button" className="btn-close" onClick={closeModal} aria-label="Close"></button>
             </div>
             <div className="modal-body">
-              <p className="text-muted mb-3">M.Tech Thesis | Predictive Modeling</p>
+              <p className="text-secondary mb-3 fw-bold">High-Precision Intelligent Search & QA Platform</p>
               <ul>
-                <li className="mb-2"><strong>Deep Learning for Material Properties:</strong> Developed a multivariate regression model to predict Ultimate Tensile Strength (UTS) of Friction Stir Welded joints, utilizing inputs like RPM, traverse speed, tool geometry, and thermal profiles.</li>
-                <li className="mb-2"><strong>Physics-Aware Architecture:</strong> Designed a novel framework combining data-driven deep learning with physical conservation laws (PINNs) to simulate process stability and defect formation with high accuracy.</li>
-                <li className="mb-2"><strong>Real-Time Visualization:</strong> Built interactive dashboards to visualize complex time-series data and model predictions for real-time anomaly detection.</li>
+                <li className="mb-2"><strong>Hybrid Retrieval Architecture:</strong> Combined semantic vector search (FAISS) with traditional keyword match (BM25), leveraging Cross-Encoders for high-accuracy reranking.</li>
+                <li className="mb-2"><strong>Multi-LLM Asynchronous Streaming:</strong> Formulated a FastAPI backend handling asynchronous response streaming, dynamically routing requests between cloud providers and local APIs.</li>
+                <li className="mb-2"><strong>Production Monitoring:</strong> Integrated Prometheus metrics and tracing correlation IDs for full-stack API request tracking and observability.</li>
               </ul>
+              <p className="mt-4 mb-3"><strong>Technologies:</strong> FastAPI, React 19, LangChain, FAISS, Prometheus, Docker</p>
+              <div className="mt-4">
+                <a
+                  href="https://github.com/parameswarrout/Rag-Chatbot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-dark d-inline-flex align-items-center gap-2"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>View GitHub Repository</span>
+                </a>
+              </div>
             </div>
           </>
         );
@@ -59,17 +97,28 @@ const ProjectModal = ({ modalId, isOpen, closeModal }) => {
         return (
           <>
             <div className="modal-header">
-              <h5 className="modal-title"><strong>JustWatch | Movie Data Management</strong></h5>
-              <button type="button" className="btn-close" onClick={closeModal}></button>
+              <h5 className="modal-title">Serverless Media Data Pipeline</h5>
+              <button type="button" className="btn-close" onClick={closeModal} aria-label="Close"></button>
             </div>
             <div className="modal-body">
-              <p><strong>Duration:</strong>April 2024 – May 2024</p>
+              <p className="text-secondary mb-3 fw-bold">Automated Daily Extraction and Sync Engine</p>
               <ul>
-                <li>Scraped movie data from the Justwatch platform using BeautifulSoup, extracting detailed information on movie availability, genres, and ratings for comprehensive dataset creation.</li>
-                <li>Conducted in-depth data analysis with Pandas to identify trends in movie streaming patterns, popular genres, and audience preferences, providing actionable insights for content strategy.</li>
+                <li className="mb-2"><strong>High-Resilience Scraping:</strong> Developed Python scraping scripts designed to bypass high-latency user interfaces, ads, and CAPTCHAs to collect metadata links directly.</li>
+                <li className="mb-2"><strong>Zero-Cost Compute:</strong> Deployed a cron-triggered pipeline running daily jobs serverlessly on GitHub Actions, removing the need for dedicated EC2 instances.</li>
+                <li className="mb-2"><strong>Google Sheets API Sync:</strong> Automated daily data synchronization directly to a Google Sheets sheet, serving as a real-time serverless database.</li>
               </ul>
-              <p><strong>Technologies:</strong> BeautifulSoup, Pandas, Python</p>
-              <p><strong>GitHub:</strong> <a href="https://github.com/parameswarrout/Projects-company/blob/main/Web-Scraping-justwatch.ipynb" target="_blank" rel="noopener noreferrer">View Project</a></p>
+              <p className="mt-4 mb-3"><strong>Technologies:</strong> Python, Scrapy, GitHub Actions, Google Sheets API</p>
+              <div className="mt-4">
+                <a
+                  href="https://github.com/parameswarrout/daily-scraper"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-dark d-inline-flex align-items-center gap-2"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>View GitHub Repository</span>
+                </a>
+              </div>
             </div>
           </>
         );
@@ -77,39 +126,17 @@ const ProjectModal = ({ modalId, isOpen, closeModal }) => {
         return (
           <>
             <div className="modal-header">
-              <h5 className="modal-title"><strong>Food Vision Image Classification</strong></h5>
-              <button type="button" className="btn-close" onClick={closeModal}></button>
+              <h5 className="modal-title">Physics-Informed Neural Networks (PINNs)</h5>
+              <button type="button" className="btn-close" onClick={closeModal} aria-label="Close"></button>
             </div>
             <div className="modal-body">
-              <p><strong>Duration:</strong>Jan 2024 – March 2024</p>
+              <p className="text-secondary mb-3 fw-bold">M.Tech Thesis | Material Strength Deep Learning Simulation</p>
               <ul>
-                <li>Developed deep learning models for image classification using EfficientNetB0 and Convolutional Neural Network (CNNs), achieving high accuracy through transfer learning.</li>
-                <li>Implemented state-of-the-art techniques to enhance model performance, leveraging TensorFlow and Keras.</li>
-                <li>Utilized tools like TensorFlow, Keras, Scipy, Pandas, Numpy, Scikit-learn, Matplotlib.</li>
+                <li className="mb-2"><strong>Multivariate Regression Modelling:</strong> Built regression networks to predict Friction Stir Welded joint tensile strength from weld velocity, tools, and thermal logs.</li>
+                <li className="mb-2"><strong>Physics-Aware Training Constraints:</strong> Designed a custom network that penalizes predictions violating physical conservation laws, simulating defect thresholds.</li>
+                <li className="mb-2"><strong>Interactive Modeling Dashboard:</strong> Developed visualization widgets to chart predicted joint properties against historical limits.</li>
               </ul>
-              <p><strong>Technologies:</strong> TensorFlow, Keras, Numpy, Scikit-learn</p>
-            </div>
-          </>
-        );
-      case 6:
-        return (
-          <>
-            <div className="modal-header">
-              <h5 className="modal-title"><strong>Bank Customer Churn Prediction</strong></h5>
-              <button type="button" className="btn-close" onClick={closeModal}></button>
-            </div>
-            <div className="modal-body">
-              <ul>
-                <li>Analyzed a bank customer dataset from Kaggle to identify factors influencing customer churn through exploratory data analysis (EDA) and visualizations.</li>
-                <li>Preprocessed data by handling missing values, encoding categorical features, and scaling numerical data.</li>
-                <li>Built and evaluated multiple machine learning models (Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, XGBoost, SVM) to classify customers as likely to churn or not.</li>
-                <li>Applied hyperparameter tuning (GridSearchCV) to optimize Random Forest performance.</li>
-                <li>Developed a deep learning model using TensorFlow and Keras with dropout regularization and early stopping to improve accuracy and prevent overfitting.</li>
-                <li>Evaluated models using metrics like Accuracy, F1 Score, Confusion Matrix, and ROC-AUC.</li>
-                <li>Key insights: older customers and inactive members were more likely to churn; ensemble methods performed best at capturing complex patterns.</li>
-              </ul>
-              <p><strong>Technologies:</strong> Scikit-learn, XGBoost, Keras, Matplotlib</p>
-              <p><strong>GitHub:</strong> <a href="https://github.com/parameswarrout/Bank-Customer-Churn-Analysis/blob/main/README.md" target="_blank" rel="noopener noreferrer">View Project</a></p>
+              <p className="mt-4 mb-2"><strong>Technologies:</strong> Python, PyTorch, NumPy, Matplotlib, SciPy</p>
             </div>
           </>
         );
@@ -128,7 +155,7 @@ const ProjectModal = ({ modalId, isOpen, closeModal }) => {
       style={{ display: isOpen ? 'block' : 'none' }}
       aria-labelledby="projectModalLabel"
       aria-hidden={!isOpen}
-      onClick={closeModal} // Close modal when clicking outside
+      onClick={closeModal}
     >
       <div className="modal-dialog modal-lg modal-dialog-centered" onClick={(e) => e.stopPropagation()}>
         <div className="modal-content">
